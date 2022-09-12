@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    background-color:  hsl(30, 38%, 92%);
+    font-size:14px;
+    font-family:"Montserrat", sans-serif;
+    color:hsl(228, 12%, 48%);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    min-height:calc(100vh - 0.1px);
+    margin:0 1.5rem;
+}
+h1, .price {
+    font-family:"Fraunces", sans-serif;
+}
+h1 {
+    color: hsl(212, 21%, 14%);
+    margin-top:0.5rem;
+    margin-bottom:1rem;
+    font-size:2rem;
+}
+h2 {
+    text-transform:uppercase;
+    font-weight:500;
+    font-size:0.8rem;
+    letter-spacing:0.3rem;
+}
+.price {
+    color: hsl(158, 36%, 37%);
+}
+p {
+    margin-bottom:0.5rem;
+}
+li, p {
+    font-family:inherit;
+    line-height:1.8;
+}
+li:nth-of-type(1) {
+    font-size:2rem;
+}
+li:nth-of-type(2) {
+    text-decoration:line-through;
+    margin-right:1.5rem;
+    position:relative;
+    left:10%
+}
+ul {
+    list-style-type: none;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin-bottom:1rem;
+}
+
+.container {
+    height:100%;
+    max-width:600px;
+}
+button {
+    background-color:hsl(158, 36%, 37%);
+    height:60px;
+    width:80%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:2rem;
+    border:none;
+    border-radius:0.5rem;
+    font-size:1rem;
+    color:hsl(0, 0%, 100%);
+    font-family:montserrat;
+    font-weight:700;
+    cursor:pointer;
+}
+button img{
+    margin-right:0.5rem;
+}
+button:hover {
+    background-color:hsl(160, 37%, 17%);
+    
+}
+img {
+    max-width:100%;
+}
+article:nth-of-type(1) {
+    border-radius:0.5 0.5 0.5 0.5;
+}
+article:nth-of-type(2) {
+    background-color:hsl(0, 0%, 100%);
+    padding:1.5rem;
+    border-radius:0 0 0.5rem 0.5rem;
+    margin-top:-1rem;
+}
+.attribution { 
+    font-size: 14px; text-align: center; 
+    margin-top:2rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (min-width: 640px) {
+    .container {
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+    }
+    article:nth-of-type(1) {
+        border-radius:0.625rem, 0, 0, 0.625rem;
+    }
+    article:nth-of-type(2) {
+        border-radius:0;
+        border-radius:0.625rem, 0, 0, 0.625rem;
+        margin-top:0;
+    }
+    img {
+        height:100%;
+    }
+}
